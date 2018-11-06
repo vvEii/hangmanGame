@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      HangmanGame
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- path issue here. do not know why: only out all files in same folder works -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script src="./view.js"></script>
+    <script src="./model.js"></script>
+    <script src="./controller.js"></script>
+  </head>
+
+  <body onload="controller.startGame()">
+    <div class="card text-center">
+      <div class="card-header">
+        <h5 class="card-title" id="title">Hangman Game</h5>
+      </div>
+    </div>
+    <div id="gameDiv" class="card-body">
+    <!-- limitTimes and score labels -->
+    <div class="float-left">
+      <p id="labelLimitTimes"></p>
+      <p id="limitTimes"></p>
+    </div>
+    <div class="float-right">
+      <p id="labelScore"></p>
+      <p id="currentScore"></p>
+    </div>
+    <!-- definition label -->
+    <div class="p2 bg-dark text-white definition-div" id="definitionDiv">
+      <p id="labelDefinition"></p>
+      <p id="definition"></p>
+    </div>
+    <!-- word check result -->
+    <div class="underline" id="div-underline">
+    </div>
+    <!-- alphabet button -->
+    <div id="alphabet-btn">
+    </div>
+    <!-- start button -->
+    <div id="btn-div" class="text-center">
+      <!-- <button class="btn btn-info" id="btn-start" type="button" name="button" onclick="controller.startGame()">Start Game</button> -->
+    </div>
+    <div id="div-congratulation">
+      <h3 class="text-center" id="congratulation"></h3>
+    </div>
+</div>
+  </body>
+  </html>

@@ -1,0 +1,85 @@
+#heading{
+  text-align: center;
+}
+
+#alphabet-btn{
+  text-align: center;
+}
+
+#div-btn-start{
+  text-align: center;
+}
+.btn-info{
+  margin-top: 50px;
+}
+
+.btn-secondary{
+  margin-top: 50px;
+}
+
+.btn-success{
+  margin-top: 50px;
+}
+
+.btn-danger{
+  margin-top: 50px;
+}
+
+.btn-warning{
+  margin-top: 50px;
+}
+
+.btn-primary{
+  margin:1px;
+}
+
+.definition-div{
+  margin-top: 80px;
+  text-align: center;
+}
+
+.underline{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5px;
+  justify-content: center;
+}
+
+.underline-p{
+  margin:5px;
+  font-size: 60px;
+}
+
+.text-center{
+  margin-top: 20px;
+}
+
+.signUpWarning{
+  color: red;
+  margin-top: 10px;
+}
+
+.signIn{
+  color: black;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.user{
+  color:green;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.definitionDiv{
+  margin-top: 0px;
+}
+
+#back{
+  margin-top: 0px;
+}
+
+#rankDiv{
+  margin-top: 0px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      HangmanGame
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- path issue here. do not know why: only out all files in same folder works -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script src="./view.js"></script>
+    <script src="./model.js"></script>
+    <script src="./controller.js"></script>
+  </head>
+
+  <body>
+    <div class="card text-center">
+      <div class="card-header" id="headerDiv">
+      </div>
+      <div class="card-body" id="cardDiv">
+        <h5 class="card-title">Welcome!</h5>
+        <p class="card-text">Please login or sign up.</p>
+        <!-- if add <form></form> here, then the button onclick will refresh the page. WHY? -->
+        <div class="form-group" id="usernameDiv">
+          <p>Username</p>
+          <input class="form-control" id="usernameInput" placeholder="Username">
+        </div>
+        <div class="form-group" id="passwordDiv">
+          <p>Password</p>
+          <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+        </div>
+          <div id="confirmPasswordDiv">
+        </div>
+        <button class="btn btn-success" id="btn-login" type="button" name="button" onclick="model.login()">Login</button>
+        <button class="btn btn-info" id="btn-signUp" type="button" name="button" onclick="controller.signUp()">Sign Up</button>
+      </div>
+    </div>
+  </body>
+  </html>
